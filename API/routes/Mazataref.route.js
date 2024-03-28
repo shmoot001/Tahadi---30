@@ -17,7 +17,7 @@ MazatarefRouter.delete('/deleteQuestion/:id', deleteQuestion);
 // Route för att hämta en slumpmässig fråga
 MazatarefRouter.get('/random', getRandomQuestion);
 
-
+// Route för att hämta en slumpmässig fråga beoende på svårighetsgraden
 MazatarefRouter.get('/difficulty/:difficulty', getRandomQuestionByDifficulty);
 
 export default MazatarefRouter;
