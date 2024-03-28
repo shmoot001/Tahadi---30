@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import MazatarefRouter from './routes/Mazataref.route.js';
+import MazadRouter from './routes/Mazad.route.js';
 
 dotenv.config();
 
@@ -14,6 +15,8 @@ const app = express();
 app.use(express.json());
 
 app.use('/api/mazataref/', MazatarefRouter);
+app.use('/api/mazad/', MazadRouter);
+
 
 app.listen(3000, () =>{
     console.log('Server is running on port 3000');
