@@ -20,13 +20,13 @@ export default function MazaTaraf() {
         <h1 className="text-4xl">{randomQuestion}</h1>
       </div>
       <div className="flex">
-        <button className="bg-green-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 mr-4" onClick={() => getQuestionByDifficulty('easy')}>
+        <button className="bg-green-500 text-white py-8 px-14 rounded-lg shadow-md hover:bg-green-600 mr-4" onClick={() => getQuestionByDifficulty('easy')}>
           <span>Lätt</span>
         </button>
-        <button className="bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-yellow-600" onClick={() => getQuestionByDifficulty('medium')}>
+        <button className="bg-yellow-500 text-white py-8 px-14 rounded-lg shadow-md hover:bg-yellow-600" onClick={() => getQuestionByDifficulty('medium')}>
           <span>Medium</span>
         </button>
-        <button className="bg-red-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-600 ml-4" onClick={() => getQuestionByDifficulty('hard')}>
+        <button className="bg-red-500 text-white py-8 px-14 rounded-lg shadow-md hover:bg-red-600 ml-4" onClick={() => getQuestionByDifficulty('hard')}>
           <span>Svår</span>
         </button>
       </div>

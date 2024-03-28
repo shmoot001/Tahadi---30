@@ -5,6 +5,7 @@ import Jaras from './pages/Jaras'
 import Mazad from './pages/Mazad'
 import MazaTaref from './pages/MazaTaraf'
 import Header from './components/Header'
+import Challenges from './pages/challenges'
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
     <Route path="/mazad" element={<Mazad/>}/>
     <Route path="/jaras" element={<Jaras/>}/>
     <Route path="/altaawed" element={<Altaawed/>}/>
+    <Route path="/challenges"element={<Challenges/>} />
 
   </Routes>
   </BrowserRouter>;
