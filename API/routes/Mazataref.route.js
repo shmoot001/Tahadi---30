@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAllQuestions,getRandomQuestionByDifficulty, createQuestion, test, deleteQuestion, getRandomQuestion } from '../controllers/MazatarefController.js'
+import { getAllQuestions,getRandomQuestionByDifficulty, createQuestion, test, deleteQuestion } from '../controllers/MazatarefController.js'
 
 const MazatarefRouter = express.Router();
 
@@ -13,9 +13,6 @@ MazatarefRouter.post('/createQuestion', createQuestion);
 
 // Route för att ta bort en fråga
 MazatarefRouter.delete('/deleteQuestion/:id', deleteQuestion);
-
-// Route för att hämta en slumpmässig fråga
-MazatarefRouter.get('/random', getRandomQuestion);
 
 
 MazatarefRouter.get('/difficulty/:difficulty', getRandomQuestionByDifficulty);

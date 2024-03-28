@@ -42,16 +42,6 @@ export const deleteQuestion = async (req, res) => {
   }
 };
 
-export const getRandomQuestion = async (req, res) => {
-    try {
-      const count = await MazatarefQuestions.countDocuments();
-      const randomIndex = Math.floor(Math.random() * count);
-      const randomQuestion = await MazatarefQuestions.findOne().skip(randomIndex).lean().exec();
-      res.json(randomQuestion);
-    } catch (error) {
-      res.status(500).json({ message: error.message });
-    }
-  };
 
   export const getRandomQuestionByDifficulty = async (req, res) => {
     const { difficulty } = req.params;
